@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Model Viewer Demonstration</title>
+        <style>
+            body {
+                background-color: lightgrey;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            model-viewer {
+                height: 60vh;
+                width: 100%;
+            }
+
+            .Main-Header {
+                color: navy;
+            }
+        </style>
+    </head>
+    <body>
+        <model-viewer
+            auto-rotate
+            camera-controls
+            loading="razor"
+            alt="razor diagram"
+            src="razorfinal2.gltf"
+        >
+        </model-viewer>
+        
+        <!-- Import the component -->
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    </body>
+</html>
